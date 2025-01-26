@@ -16,4 +16,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+import Typed from 'typed.js';
+
+document.addEventListener("DOMContentLoaded", function () {
+  var typed = new Typed("#typed-text", {
+    strings: ["a developer.", "a writer.", "a problem solver."], // Customize these
+    typeSpeed: 70, // Adjust speed (lower is faster)
+    backSpeed: 40,
+    backDelay: 1500, // Time before erasing
+    startDelay: 500,
+    loop: true, // Makes it repeat
+    showCursor: true, // Show blinking cursor
+    cursorChar: "|",
+  });    
+});
+
 console.log("Welcome to my portfolio!");
