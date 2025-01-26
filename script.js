@@ -6,8 +6,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
+            const offset = 70; 
+            const elementPosition = target.getBoundingClientRect().top + window.scrollY;
             window.scrollTo({
-                top: target.offsetTop - 50, // Adjust offset for fixed navbar
+                top: elementPosition - offset,
                 behavior: 'smooth'
             });
         }
