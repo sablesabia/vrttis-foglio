@@ -16,8 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-import Typed from 'typed.js';
-
 document.addEventListener("DOMContentLoaded", function () {
   var typed = new Typed("#typed-text", {
     strings: ["a developer.", "a writer.", "a problem solver."], // Customize these
